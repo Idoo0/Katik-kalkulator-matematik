@@ -41,6 +41,7 @@ main p{
 
 .pilihan {
     width: 100%;
+    margin-bottom: 5px;
 }
 
 .pilihan button{
@@ -49,17 +50,17 @@ main p{
     width: 100%;
     padding: 10px;
     font-size: 15px;
-    
     border-radius: 5px;
-}
-
-.pilihan button:nth-child(1) {
-    background-color: rgb(66, 134, 161);
-    color: white;
-}
-.pilihan button:nth-child(2) {
     background-color: white;
     color: rgb(66, 134, 161);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pilihan .selected-pilihan {
+    background-color: rgb(66, 134, 161);
+    color: white;
 }
 
 .pilihan button:hover{
@@ -85,17 +86,12 @@ main p{
     width: 90%;
     padding: 5%;
     display: flex;
-    justify-content: left;
     flex-direction: column;
     border: 1px solid rgb(66, 134, 161);
     border-bottom: 1px solid rgba(66, 134, 161, 0.425);
     line-height: 1.4;
 }
 
-.wrapper-rumus .rumus {
-    text-align: center;
-    font-weight: bold;
-}
 
 .wrapper-img {
     width: 100%;
@@ -106,6 +102,29 @@ main p{
 .wrapper-rumus img {
     width: 200px;
 }
+
+#luasRumus {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrapper-rumus #luasRumus .rumus {
+    text-align: center;
+    font-weight: bold;
+}
+
+#kelilingRumus {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+}
+
+.wrapper-rumus #kelilingRumus .rumus {
+    text-align: center;
+    font-weight: bold;
+}
+
 
 .wrapper-hasil {
     display: flex;
@@ -118,7 +137,7 @@ main p{
     border-top: 0;
 }
 
-.wrapper-hasil span {
+.wrapper-hasil #Title {
     text-align: center;
     font-weight: bold;
     font-size: 35px;
@@ -144,4 +163,11 @@ main p{
 .wrapper-hasil button:hover{
     transform: scale(0.95);
     cursor: pointer;
+}
+
+.wrapper-hasil .hasil {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
 }

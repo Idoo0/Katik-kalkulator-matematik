@@ -20,8 +20,8 @@
             Sebuah web apps sederhana yang berfungsi untuk menghitung nilai luas dan keliling bangun datar
         </p>
         <div class="pilihan">
-            <button class="luas">Luas</button>
-            <button class="keliling">Keliling</button>
+            <button id="luas" class="selected-pilihan">Luas</button>
+            <button id="keliling" class="">Keliling</button>
         </div>
         <div class="wrapper-pilihan">
             <span>Luas Persegi</span>
@@ -30,20 +30,37 @@
             <div class="wrapper-img">
                 <img src="bujur.png"> 
             </div>
-            <span>Rumus Luas Persegi yaitu: </span> <br>
-            <span class="rumus">L = S * S</span> <br>
-            <span>
-                Di Mana : <br>
-                L = Luas <br>
-                S = Sisi
-            </span>
+            <div id="luasRumus">
+                <span>Rumus Luas Persegi yaitu: </span> <br>
+                <span class="rumus">L = S * S</span> <br>
+                <span>
+                    Di Mana : <br>
+                    L = Luas <br>
+                    S = Sisi
+                </span>
+            </div>
+            <div id="kelilingRumus">
+                <span>Rumus Keliling Persegi yaitu: </span> <br>
+                <span class="rumus">K = 4 * S</span> <br>
+                <span>
+                    Di Mana : <br>
+                    K = Keliling <br>
+                    S = Sisi
+                </span>
+            </div>
+            
         </div>
         <div class="wrapper-hasil">
-            <span>Hitung Keliling Persegi</span>
+            <span id="Title">Hitung Luas Persegi</span>
             <input class="input-sisi" type="text" placeholder="Nilai Sisi">
+            <div class="hasil">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <button class="hitung">Hitung</button>
         </div>
-        
     </main>
+    <script src="script.js"></script>
 </body>
 </html>
