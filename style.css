@@ -25,6 +25,7 @@ main {
     width: 90%;
     height: auto;
     margin: 20px auto;
+    margin-top: 30px;
     padding: 20px 15px;
     display: flex;
     align-items: center;
@@ -56,6 +57,7 @@ main p{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.1s linear;
 }
 
 .pilihan .selected-pilihan {
@@ -64,9 +66,11 @@ main p{
 }
 
 .pilihan button:hover{
-    transform: scale(0.95);
+    transform: scale(0.98);
     cursor: pointer;
+    box-shadow: 0px 0px 3px 1px rgb(38, 71, 83);
 }
+
 
 .wrapper-pilihan {
     background-color: rgb(66, 134, 161);
@@ -144,7 +148,7 @@ main p{
 }
 
 .wrapper-hasil input {
-    padding: 5px 10px;
+    padding: 15px 20px;
     border: 1px solid rgba(128, 128, 128, 0.452);
     border-radius: 5px;
     width: 100%;
